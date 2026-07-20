@@ -16,7 +16,7 @@ type NavBarButtonProps = NavItem & {
 };
 
 const buttonStyles =
-  "bg-blue-300 rounded-2xl p-5 hover:rounded-4xl opacity-70 hover:opacity-100 transition-all shadow-2xl justify-center items-center";
+  "bg-blue-300 rounded-2xl px-5 py-2 hover:rounded-4xl opacity-70 hover:opacity-100 transition-all shadow-2xl justify-center items-center";
 
 export default function NavBarButton({
   label,
