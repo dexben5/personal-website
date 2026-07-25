@@ -25,7 +25,6 @@ export default function HeaderNav({
     },
     { label: "About Me", href: "/about" },
   ];
-  console.dir(navItems, { depth: null });
 
   return (
     <nav className="overflow-auto flex flex-wrap justify-center items-center text-2xl font-bold gap-36 bg-blue-50">
