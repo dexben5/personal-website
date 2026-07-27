@@ -1,13 +1,14 @@
 import parse from "html-react-parser";
-import { getAllProjectIds, getProjectData } from "@lib/projects";
+import {getAllProjectIds, getProjectData} from "@lib/projects";
 import DateFormat from "@components/DateFormat";
+import Link from "next/link";
 
 export async function generateMetadata({
-  params,
-}: {
+                                         params,
+                                       }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
+  const {slug} = await params;
   const projectData = await getProjectData(slug);
   return {
     title: projectData.title,
@@ -25,11 +26,11 @@ export async function generateStaticParams() {
 }
 
 export default async function Post({
-  params,
-}: {
+                                     params,
+                                   }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
+  const {slug} = await params;
   const projectData = await getProjectData(slug);
 
   return (
@@ -38,11 +39,12 @@ export default async function Post({
         <h1 className="text-[2rem] font-extrabold leading-[1.3] tracking-[-0.05rem] my-4">
           {projectData.title}
         </h1>
-        <div className="text-stone-500">
-          <DateFormat dateString={projectData.date} />
-        </div>
         <div>{parse(projectData.contentHtml)}</div>
       </article>
+      <Link href={projectData.repoLink} target="_blank"
+            className="px-3 py-2 bg-blue-200 hover:bg-blue-300 transition-all rounded-md">View
+        on
+        GitHub</Link>
     </>
   );
 }

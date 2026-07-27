@@ -12,6 +12,7 @@ export interface ProjectData {
   slug: string;
   date: string;
   title: string;
+  repoLink: string;
 }
 
 export async function getSortedProjectsData() {
@@ -26,12 +27,12 @@ export async function getSortedProjectsData() {
 
     return {
       slug,
-      ...(matterResult.data as { date: string; title: string }),
+      ...(matterResult.data as { date: string; title: string; repoLink: string }),
     };
   });
 
   return allProjectsData.sort((a, b) => {
-    if (a.date < b.date) {
+    if (a.title < b.title) {
       return 1;
     } else {
       return -1;
@@ -59,6 +60,7 @@ export async function getProjectData(slug: string) {
   return {
     slug,
     contentHtml,
+    repoLink: matterResult.data.repoLink,
     ...(matterResult.data as { date: string; title: string }),
   };
 }
