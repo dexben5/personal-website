@@ -21,7 +21,6 @@ const grid = dfsGenerateMaze(rows, cols, start);
 
 export default function MazeDriver() {
   // Start bfs with a given grid, start point, and delay between cell explorations
-  console.table(grid);
   const lastVisited = useBfs(grid, start, stepDelayMs);
   return <MazeBackground grid={grid} lastVisited={lastVisited} cellSize={41} />;
 }

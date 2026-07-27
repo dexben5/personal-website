@@ -66,16 +66,3 @@ export default function dfsGenerateMaze(
 
   return grid;
 }
-
-// TESTING
-const rows = 11;
-const cols = 11;
-
-const randX = Math.floor(Math.random() * rows);
-const randY = Math.floor(Math.random() * cols);
-const start: Coord = [
-  randX % 2 == 0 ? (randX > 1 ? randX - 1 : randX + 1) : randX,
-  randY % 2 == 0 ? (randY > 1 ? randY - 1 : randY + 1) : randY,
-];
-
-console.table(dfsGenerateMaze(rows, cols, start));
