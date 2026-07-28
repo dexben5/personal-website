@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="daf4d56b-8914-4ef7-a9ae-4d58e232fed9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="34" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.066889294161052" />
+      <entry key="MS500" value="3.092080200592794" />
+      <entry key="S2" value="5.569329289381769" />
+      <entry key="S5" value="6.376819961724102" />
+      <entry key="S10" value="6.734618596683061" />
+      <entry key="S30" value="12.852306880917324" />
+      <entry key="S60" value="33.74623172895469" />
+      <entry key="M2" value="76.92632832444583" />
+      <entry key="M5" value="152.01648592442493" />
+      <entry key="M10" value="224.6615036784864" />
+      <entry key="M15" value="279.1479478245301" />
+      <entry key="M30" value="379.2239690855211" />
+      <entry key="H1" value="462.137285873454" />
+      <entry key="H2" value="516.738014079733" />
+      <entry key="H4" value="548.2461378268328" />
+      <entry key="D1" value="576.966627310558" />
+      <entry key="W1" value="582.1319696447268" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.3558974080690895E-137" />
+      <entry key="S10" value="6.619818058949675E-69" />
+      <entry key="S30" value="2.9549546466141134E-23" />
+      <entry key="S60" value="7.679161722799211E-12" />
+      <entry key="M2" value="3.917892604194987E-6" />
+      <entry key="M5" value="0.010418623480477856" />
+      <entry key="M10" value="0.14434953574171558" />
+      <entry key="M15" value="0.3466989537269935" />
+      <entry key="M30" value="0.8327041564429429" />
+      <entry key="H1" value="1.2905066039888091" />
+      <entry key="H2" value="1.6065530845817773" />
+      <entry key="H4" value="1.792513890160076" />
+      <entry key="D1" value="1.9638218306611284" />
+      <entry key="W1" value="1.994791168272622" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.15018216523878697" />
+      <entry key="MS500" value="2.692511296622826" />
+      <entry key="S2" value="5.4477274014229815" />
+      <entry key="S5" value="6.326059381712395" />
+      <entry key="S10" value="6.708795515042228" />
+      <entry key="S30" value="12.839624136615377" />
+      <entry key="S60" value="33.731839054665215" />
+      <entry key="M2" value="76.91039288412264" />
+      <entry key="M5" value="152.0140348870942" />
+      <entry key="M10" value="224.79270207033744" />
+      <entry key="M15" value="279.48022133231626" />
+      <entry key="M30" value="380.042778050474" />
+      <entry key="H1" value="463.41767193572275" />
+      <entry key="H2" value="518.3384016802473" />
+      <entry key="H4" value="550.0352419822702" />
+      <entry key="D1" value="578.9298304553467" />
+      <entry key="W1" value="584.1266711250264" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3H0N9bvztRqwdWLfys6kKO1tPaM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "maze-background",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/Software Development/MyWebsite",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.Next.js: server-side.executor": "Run",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\Software Development\\MyWebsite\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.341" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daf4d56b-8914-4ef7-a9ae-4d58e232fed9" name="Changes" comment="" />
+      <created>1785000876773</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1785000876773</updated>
+      <workItem from="1785000878085" duration="145000" />
+      <workItem from="1785013457298" duration="73000" />
+      <workItem from="1785180150241" duration="3525000" />
+      <workItem from="1785280605281" duration="1435000" />
+      <workItem from="1785282064126" duration="780000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="projects" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

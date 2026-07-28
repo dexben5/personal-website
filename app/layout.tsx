@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import type {Metadata} from "next";
+import {Analytics} from "@vercel/analytics/next";
+import {SpeedInsights} from "@vercel/speed-insights/next";
 import HeaderNav from "@components/HeaderNav";
 import BackToHome from "@components/BackToHome";
 import MazeDriver from "@components/MazeDriver";
 import "@styles/global.css";
+import React from "react";
 
-export const siteTitle = "Dexter Benson's Website";
+const siteTitle = "Dexter Benson's Website";
 
 export const metadata: Metadata = {
   title: {
@@ -25,18 +26,18 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-        <body>
-          <header>
-            <HeaderNav />
-          </header>
-          <div className="lg:max-w-2/5 sm:max-w-full mx-auto mt-12 mb-24 px-4">
-            <main>{children}</main>
-            <BackToHome />
-          </div>
-          <MazeDriver />
-          <Analytics />
-          <SpeedInsights />
-        </body>
+      <body>
+      <header>
+        <HeaderNav/>
+      </header>
+      <div className="lg:max-w-2/5 sm:max-w-full mx-auto mt-12 mb-24 px-4">
+        <main>{children}</main>
+        <BackToHome/>
+      </div>
+      <MazeDriver/>
+      <Analytics/>
+      <SpeedInsights/>
+      </body>
       </html>
     </>
   );
