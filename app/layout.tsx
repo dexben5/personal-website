@@ -4,6 +4,7 @@ import {SpeedInsights} from "@vercel/speed-insights/next";
 import HeaderNav from "@components/HeaderNav";
 import BackToHome from "@components/BackToHome";
 import MazeDriver from "@components/MazeDriver";
+import { getSortedProjectsData } from "@lib/projects";
 import "@styles/global.css";
 import React from "react";
 
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to Dexter Benson's website, a home for my journey as a software engineer",
 };
+const allProjectsData = await getSortedProjectsData();
 
 export default function RootLayout({
   children,
@@ -26,18 +28,18 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-      <body>
-      <header>
-        <HeaderNav/>
-      </header>
-      <div className="lg:max-w-2/5 sm:max-w-full mx-auto mt-12 mb-24 px-4">
-        <main>{children}</main>
-        <BackToHome/>
-      </div>
-      <MazeDriver/>
-      <Analytics/>
-      <SpeedInsights/>
-      </body>
+        <body>
+          <header>
+            <HeaderNav allProjectsData={allProjectsData} />
+          </header>
+          <div className="lg:max-w-2/5 sm:max-w-full mx-auto mt-12 mb-24 px-4">
+            <main>{children}</main>
+            <BackToHome />
+          </div>
+          <MazeDriver/>
+          <Analytics />
+          <SpeedInsights />
+        </body>
       </html>
     </>
   );

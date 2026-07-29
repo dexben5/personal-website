@@ -5,17 +5,23 @@ import HomePage from "./HomePage";
 import NavBarButton from "./NavBarButton";
 import Image from "next/image";
 import { OWNER_NAME } from "@lib/constants";
+import { ProjectData } from "@lib/projects";
 
-export default function HeaderNav() {
+export default function HeaderNav({
+  allProjectsData,
+}: {
+  allProjectsData: ProjectData[];
+}) {
   const pathname = usePathname();
   const isHome = pathname === "/";
+
   const navItems = [
     {
       label: "Projects",
-      dropdown: [
-        { label: "Project One", slug: "project-one" },
-        { label: "Project Two", slug: "project-two" },
-      ],
+      dropdown: allProjectsData.map(({ slug, title }) => ({
+        label: title,
+        slug: slug,
+      })),
     },
     { label: "About Me", href: "/about" },
   ];
