@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { bfs, Coord } from "@lib/bfs";
+import {useEffect, useRef, useState} from "react";
+import {bfs, Coord} from "@lib/bfs";
 
 export default function useBfs(
   grid: number[][],

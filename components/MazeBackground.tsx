@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { Coord } from "@lib/bfs";
+import {useEffect, useRef} from "react";
+import {Coord} from "@lib/bfs";
 
 type Props = {
   grid: number[][];
@@ -54,7 +54,7 @@ export default function MazeBackground({
       ref={canvasRef}
       width={grid[0].length * cellSize}
       height={grid.length * cellSize}
-      className="fixed top-0 left-0 -z-10 opacity-80"
+      className="fixed top-0 left-0 -z-10 opacity-30"
     />
   );
 }
