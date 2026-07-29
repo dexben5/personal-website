@@ -27,7 +27,7 @@ export default function HeaderNav({
   ];
 
   return (
-    <nav className="overflow-auto flex flex-wrap justify-center items-center text-2xl font-bold gap-36 bg-blue-50">
+    <nav className="overflow-auto flex flex-wrap justify-center items-center text-2xl font-bold gap-36 bg-blue-50/70">
       <div className="flex justify-center items-center pt-2">
         <HomePage isHome={isHome}>
           <>
