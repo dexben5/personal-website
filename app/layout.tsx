@@ -29,7 +29,7 @@ export default function RootLayout({
     <>
       <html lang="en">
         <body>
-          <header>
+          <header className="top-0 left-0 w-full z-40">
             <HeaderNav allProjectsData={allProjectsData} />
           </header>
           <div className="lg:max-w-2/5 sm:max-w-full mx-auto mt-12 mb-24 px-4">
