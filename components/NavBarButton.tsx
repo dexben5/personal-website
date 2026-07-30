@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {useState, useRef, useEffect} from "react";
+import React, {useState, useRef, useEffect} from "react";
 
 type DropdownItem = {
   label: string;
