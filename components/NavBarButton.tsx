@@ -53,6 +53,7 @@ function DropDownNavButton({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const isTouchRef = useRef(false);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
@@ -68,15 +69,33 @@ function DropDownNavButton({
     };
   }, []);
 
-  const handleToggle = (e: React.MouseEvent) => {
+  // Handle desktop mouse hover
+  const handleMouseEnter = () => {
+    if (!isTouchRef.current) {
+      setIsOpen(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isTouchRef.current) {
+      setIsOpen(false);
+    }
+  };
+
+  // Handle mobile touch interaction
+  const handleTouchStart = () => {
+    isTouchRef.current = true;
+  };
+
+  const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     setIsOpen((prev) => !prev);
   };
 
   return (
-    <div ref={containerRef} className="relative inline-block" onMouseEnter={() => setIsOpen(true)}
-         onMouseLeave={() => setIsOpen(false)}>
-      <button type="button" onClick={handleToggle} className={`${baseButtonStyles} ${isOpen ? "opacity-100" +
+    <div ref={containerRef} className="relative inline-block" onMouseEnter={handleMouseEnter}
+         onMouseLeave={handleMouseLeave}>
+      <button type="button" onTouchStart={handleTouchStart} onClick={handleClick} className={`${baseButtonStyles} ${isOpen ? "opacity-100" +
         " rounded-4xl" : "opacity-70 rounded-2xl hover:opacity-100 hover:rounded-4xl"}`}>
         {label}
       </button>
