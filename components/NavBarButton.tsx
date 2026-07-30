@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import {useState} from "react";
 
 type DropdownItem = {
   label: string;
@@ -16,7 +16,8 @@ type NavBarButtonProps = NavItem & {
 };
 
 const buttonStyles =
-  "bg-blue-300 rounded-2xl px-5 py-2 hover:rounded-4xl opacity-70 hover:opacity-100 transition-all shadow-2xl justify-center items-center";
+  "bg-blue-300 lg:px-5 md:px-3 sm:px-2 px-1 rounded-2xl py-1 hover:rounded-4xl opacity-70" +
+  " hover:opacity-100 transition-all shadow-2xl";
 
 export default function NavBarButton({
   label,
@@ -43,26 +44,32 @@ function DropDownNavButton({
   label: string;
   items: DropdownItem[];
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDropDown = () => setIsOpen(!isOpen);
+
   return (
-    <div className="relative">
-      <button onClick={toggleDropDown} className={buttonStyles}>
+    <div className="relative inline-block group">
+      <button className={buttonStyles}>
         {label}
       </button>
-      {isOpen && (
-        <div>
+
+      <div
+        className="absolute left-0 top-full pt-2
+                   invisible opacity-0 scale-95 -translate-y-2 pointer-events-none
+                   transition-all duration-200 ease-out origin-top-left
+                   group-hover:visible group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
+      >
+        <div
+          className="flex flex-col bg-blue-300 rounded-xl p-2 shadow-2xl space-y-1 w-full">
           {items.map((item) => (
             <Link
               key={item.slug}
               href={`/projects/${item.slug}`}
-              className={buttonStyles}
+              className="px-4 py-2 rounded-lg hover:bg-blue-400 transition-colors text-sm font-medium"
             >
               {item.label}
             </Link>
           ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }
