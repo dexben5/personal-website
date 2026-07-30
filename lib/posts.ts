@@ -1,3 +1,5 @@
+"use server";
+
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -12,7 +14,7 @@ export interface PostData {
   title: string;
 }
 
-export function getSortedPostsData() {
+export async function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
     // Using regex to strip .md from filename
@@ -37,7 +39,7 @@ export function getSortedPostsData() {
   });
 }
 
-export function getAllPostIds() {
+export async function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName) => ({
     id: fileName.replace(/\.md$/, ""),

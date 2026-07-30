@@ -1,11 +1,14 @@
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import type {Metadata} from "next";
+import {Analytics} from "@vercel/analytics/next";
+import {SpeedInsights} from "@vercel/speed-insights/next";
 import HeaderNav from "@components/HeaderNav";
 import BackToHome from "@components/BackToHome";
+import MazeDriver from "@components/MazeDriver";
+import { getSortedProjectsData } from "@lib/projects";
 import "@styles/global.css";
+import React from "react";
 
-export const siteTitle = "Dexter Benson's Website";
+const siteTitle = "Dexter Benson's Website";
 
 export const metadata: Metadata = {
   title: {
@@ -15,6 +18,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to Dexter Benson's website, a home for my journey as a software engineer",
 };
+const allProjectsData = await getSortedProjectsData();
 
 export default function RootLayout({
   children,
@@ -26,12 +30,13 @@ export default function RootLayout({
       <html lang="en">
         <body>
           <header className="sticky top-0 left-0 w-full z-50">
-            <HeaderNav />
+            <HeaderNav allProjectsData={allProjectsData} />
           </header>
           <div className="lg:max-w-2/5 sm:max-w-full mx-auto mt-12 mb-24 px-4">
             <main>{children}</main>
             <BackToHome />
           </div>
+          <MazeDriver/>
           <Analytics />
           <SpeedInsights />
         </body>

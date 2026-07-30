@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -18,10 +16,9 @@
 # misc
 .DS_Store
 .env*
-.vscode/*
 
-# keep config from .vscode
-!.vscode/settings.json
+# jetbrains
+/.ai
 
 # debug
 npm-debug.log*
