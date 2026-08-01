@@ -46,9 +46,9 @@ export default function MazeDriver() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Get number of rows and columns given window size and cell size
-  const rows = Math.ceil(windowSize.height / cellSize);
-  const cols = Math.ceil(windowSize.width / cellSize);
+  // Get number of rows and columns given window size and cell size and set min for safety
+  const rows = Math.max(Math.ceil(windowSize.height / cellSize), 2);
+  const cols = Math.max(Math.ceil(windowSize.width / cellSize), 2);
 
   const {start, grid} = useMemo(() => {
     const start = getStart(rows, cols);
