@@ -1,6 +1,6 @@
-import type {Metadata} from "next";
-import {Analytics} from "@vercel/analytics/next";
-import {SpeedInsights} from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import HeaderNav from "@components/HeaderNav";
 import BackToHome from "@components/BackToHome";
 import MazeDriver from "@components/MazeDriver";
@@ -36,7 +36,7 @@ export default function RootLayout({
             <main>{children}</main>
             <BackToHome />
           </div>
-          <MazeDriver/>
+          <MazeDriver />
           <Analytics />
           <SpeedInsights />
         </body>
